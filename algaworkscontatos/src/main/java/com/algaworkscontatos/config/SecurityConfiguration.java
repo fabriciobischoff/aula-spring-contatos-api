@@ -17,7 +17,6 @@ public class SecurityConfiguration {
 	// Proteção dos endpoints
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-		//http.authorizeHttpRequests((authz) -> authz.anyRequest().authenticated()).httpBasic();
 		http.authorizeHttpRequests()
 			.anyRequest().authenticated()
 				.and()
